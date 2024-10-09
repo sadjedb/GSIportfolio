@@ -61,7 +61,7 @@ const Slider = () => {
           </div>
         ))}
       </div>
-      <div className="absolute m-auto left-1/2 md:bottom-48 bottom-[500px]  flex gap-4">
+      <div className="absolute m-auto left-[43%] md:bottom-48 bottom-[400px]  flex gap-4">
         {slides.map((slide, index) => (
           <div
             className={`w-3 h-3  rounded-full ring-1 ring-black cursor-pointer flex items-center justify-center ${
