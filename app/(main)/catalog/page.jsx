@@ -47,7 +47,8 @@ function Page() {
       <div className="flex h-1/2 w-full flex-row justify-between items-center py-10 pl-44 pr-96">
         <div className="h-full items-center justify-center flex flex-col">
           <h1 className="text-2xl font-bold mb-4 text-center">
-            Veuillez remplir la fiche technique et nous l'envoyer par email.
+            Veuillez remplir la fiche technique et nous l&apos;envoyer par
+            email.
           </h1>
           <button
             onClick={handleDownloadFich}
