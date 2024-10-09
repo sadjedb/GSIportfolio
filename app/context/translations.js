@@ -63,6 +63,7 @@ export const translations = {
     sendMessage: "Envoyez-nous un message",
     name: "Nom",
     email: "Email",
+    number: "Némuro telephone",
     subject: "Sujet",
     message: "Message",
     send: "Envoyer",
