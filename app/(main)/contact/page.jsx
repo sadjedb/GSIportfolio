@@ -11,6 +11,7 @@ const ContactPage = () => {
   const [formEle, setFormEle] = useState({
     name: "",
     email: "",
+    number: "",
     title: "",
     message: "",
   });
@@ -22,10 +23,42 @@ const ContactPage = () => {
   const handleChange = (e) => {
     setFormEle({ ...formEle, [e.target.name]: e.target.value });
   };
-  console.log("formEle", formEle);
 
   async function handleSubmit(e) {
     e.preventDefault();
+    setErrorMessage("");
+    setSuccessMessage("");
+    setLoading(true);
+    fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formEle),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.success) {
+          setSuccessMessage(data.message);
+          setErrorMessage("");
+          // setFormEle({
+          //   name: "",
+          //   email: "",
+          //   number: "",
+          //   title: "",
+          //   message: "",
+          // });
+        } else {
+          setErrorMessage(data.message);
+          setSuccessMessage("");
+        }
+      })
+      .catch((err) => {
+        setErrorMessage("Something went wrong. Please try again later.");
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   }
 
   return (
@@ -123,6 +156,23 @@ const ContactPage = () => {
                     id="email"
                     name="email"
                     value={formEle.email}
+                    onChange={handleChange}
+                    required
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="number"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    {t.number}
+                  </label>
+                  <input
+                    type="text"
+                    id="number"
+                    name="number"
+                    value={formEle.number}
                     onChange={handleChange}
                     required
                     className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
