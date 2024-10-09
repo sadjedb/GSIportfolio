@@ -41,13 +41,6 @@ const ContactPage = () => {
         if (data.success) {
           setSuccessMessage(data.message);
           setErrorMessage("");
-          // setFormEle({
-          //   name: "",
-          //   email: "",
-          //   number: "",
-          //   title: "",
-          //   message: "",
-          // });
         } else {
           setErrorMessage(data.message);
           setSuccessMessage("");

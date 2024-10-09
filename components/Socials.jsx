@@ -7,7 +7,7 @@ function socials() {
   return (
     <div className="hidden lg:flex fixed flex-col top-[35%] left-0 z-50">
       <ul>
-        <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-700 bg-[#3d3053]">
+        <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-700 bg-gray-800">
           <a
             href="https://www.instagram.com/gsiascenseur"
             target="_blank"
@@ -16,7 +16,7 @@ function socials() {
             Instgram <RiInstagramFill size={30} />
           </a>
         </li>
-        <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-700 bg-[#304053]">
+        <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-700 bg-[#282C58]">
           <a
             href="https://www.facebook.com/GENERALSTANDIMPORT"
             target="_blank"
@@ -25,7 +25,7 @@ function socials() {
             Facebook <FaFacebook size={30} />
           </a>
         </li>
-        <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-700 bg-[#2a323b]">
+        <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-700 bg-[#4078B2]">
           <a
             href="mailto:generalstandimport@gmail.com"
             target="_blank"
@@ -34,7 +34,7 @@ function socials() {
             Email <HiOutlineMail size={30} />
           </a>
         </li>
-        <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-700 bg-[#565f69]">
+        <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-700 bg-[#51524e]">
           <a
             href="/contact"
             className="flex justify-between items-center w-full text-gray-300"
