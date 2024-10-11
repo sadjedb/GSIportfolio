@@ -29,13 +29,13 @@ const Slider = () => {
   const touchEndX = useRef(null);
   const { language } = useLanguage();
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
-  //   }, 10000);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+    }, 10000);
 
-  //   return () => clearInterval(interval);
-  // }, []);
+    return () => clearInterval(interval);
+  }, []);
 
   const handleTouchStart = (e) => {
     touchStartX.current = e.touches[0].clientX;

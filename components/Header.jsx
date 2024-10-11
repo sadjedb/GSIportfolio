@@ -21,12 +21,12 @@ function Header() {
       <div className="flex justify-center items-center md:hidden px-4">
         <NavItems />
       </div>
-      <div className="flex">
+      <div className="flex justify-center items-center">
         <Link href="/" className="w-full ">
           <Image
             src={logo}
             alt="logo"
-            width={120}
+            width={130}
             height={100}
             className="object-cover"
           />

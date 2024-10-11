@@ -35,7 +35,7 @@ export const translations = {
     home: "Home",
     aboutUs: "About Us",
     products: "Products",
-    services: "catalog",
+    services: "Catalog",
     allRightsReserved: "All rights reserved.",
     homeTitle: "Elevator Design, Installation, and Maintenance Specialists",
     homeDiscreption:
@@ -87,7 +87,7 @@ export const translations = {
     sendMessage: "Envoyez-nous un message",
     name: "Nom",
     email: "Email",
-    number: "Némuro telephone",
+    number: "Numéro telephone",
     subject: "Sujet",
     message: "Message",
     send: "Envoyer",
@@ -99,7 +99,7 @@ export const translations = {
     home: "Accueil",
     aboutUs: "À propos de nous",
     products: "Produits",
-    services: "catalogue",
+    services: "Catalogue",
     allRightsReserved: "Tous droits réservés.",
     homeTitle:
       "Spécialistes de la conception, installation et maintenance d'ascenseurs",

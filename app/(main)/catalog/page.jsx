@@ -26,7 +26,7 @@ export default function Page() {
   const t = translations[language];
   return (
     <div className="flex flex-col justify-center items-center w-full p-4">
-      <div className="flex flex-col md:flex-row justify-center items-center w-full py-10 gap-8 md:gap-16">
+      <div className="flex flex-col md:flex-row justify-center items-center w-full py-10 gap-8 md:gap-16 ">
         <div className="flex flex-col items-center justify-center">
           <h1 className="text-2xl font-bold mb-4 text-center">{t.services}</h1>
           <button
@@ -47,7 +47,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-between items-center w-full py-10 gap-8 md:gap-16">
+      <div className="flex flex-col md:flex-row justify-between items-center w-full py-10 gap-8 md:gap-16 lg:px-[280px]">
         <div className="flex flex-col items-center justify-center">
           <h1 className="text-2xl font-bold mb-4 text-center px-4">
             {t.completSheet}
