@@ -1,13 +1,23 @@
+"use client";
 import React from "react";
 import logo from "../assets/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import LanguageSelector from "./Language";
-
 import NavItems from "./NavItems";
+import { useLanguage } from "@/app/context/LanguageContext";
+import { translations } from "@/app/context/translations";
+
 function Header() {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   return (
-    <div className="flex h-20 w-full shadow-md  top-0 left-0 right-0 bg-[#f3f4f6] z-50 text-gray-100   justify-between">
+    <div
+      className={`flex h-20 w-full shadow-md top-0 left-0 right-0 bg-[#f3f4f6] z-50 text-gray-100 justify-between ${
+        language === "ar" ? "rtl" : "ltr"
+      }`}
+    >
       <div className="flex justify-center items-center md:hidden px-4">
         <NavItems />
       </div>
@@ -27,29 +37,29 @@ function Header() {
           href="/"
           className="group text-gray-700 transition duration-500 hover:text-[#10183C] "
         >
-          Home
-          <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#10183C]"></span>{" "}
+          {t.home}
+          <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#10183C]"></span>
         </Link>
         <Link
           href="/aboutus"
           className="group text-gray-700 transition duration-500 hover:text-[#10183C] "
         >
-          About Us
+          {t.aboutUs}
           <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#10183C]"></span>
         </Link>
         <Link
           href="/contact"
           className="group text-gray-700 transition duration-500 hover:text-[#10183C] "
         >
-          Contact
-          <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#10183C]"></span>{" "}
+          {t.contactUs}
+          <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#10183C]"></span>
         </Link>
         <Link
           href="/catalog"
           className="group text-gray-700 transition duration-500 hover:text-[#10183C] "
         >
-          Catalog
-          <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#10183C]"></span>{" "}
+          {t.services}
+          <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#10183C]"></span>
         </Link>
       </div>
       <div className="flex justify-center items-center px-4">

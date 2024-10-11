@@ -1,3 +1,5 @@
+import { Download } from "lucide-react";
+
 export const translations = {
   en: {
     aboutTitle: "About EURL GSI Ascenseurs",
@@ -17,7 +19,6 @@ export const translations = {
       "Whether for residential, commercial, or industrial installations, GSI is dedicated to providing custom solutions that consider the unique requirements of each project. From high-rise buildings and freight elevators to elevators designed for people with reduced mobility, GSI offers efficient, durable solutions for all types of needs.",
     whyChooseUs: "Why Choose GSI Ascenseurs?",
     chooseUsText: "Expertise. Rigor. Customer-Centric Approach.",
-
     contactUs: "Contact Us",
     sendMessage: "Send us a message",
     name: "Name",
@@ -31,9 +32,37 @@ export const translations = {
     companyDescription:
       "Our elevator import and installation company offers Turkish-made elevators: THISA ELEVATOR, controlled during manufacturing by ENACT at very competitive prices, with assured after-sales service.",
     usefulLinks: "Useful Links",
+    home: "Home",
+    aboutUs: "About Us",
     products: "Products",
-    services: "Services",
+    services: "catalog",
     allRightsReserved: "All rights reserved.",
+    homeTitle: "Elevator Design, Installation, and Maintenance Specialists",
+    homeDiscreption:
+      "G.S.I Ascenseurs is dedicated to providing innovative, reliable, and safe elevator solutions. We offer comprehensive services, including consultation, design, installation, and maintenance, to ensure your vertical transportation needs are met efficiently and cost-effectively.",
+    passengerElevator: "Passenger Elevator",
+    cargoElevator: "Cargo Elevator",
+    panoramicElevator: "Panoramic Elevator",
+    hospitalElevator: "Hospital Elevator",
+    maintenance: "Maintenance",
+    download: "Download",
+    downloadfile: "Download file",
+    completSheet:
+      "Please complete the technical sheet and send it to us by email.",
+    sliderTexts: [
+      {
+        title: "Elevating Innovation",
+        description: "Where Precision Meets Perfection",
+      },
+      {
+        title: "Rising Above the Ordinary",
+        description: "Elevating Spaces with Style and Innovation",
+      },
+      {
+        title: "Precision in Motion",
+        description: "Elevators Designed for the Finest Experience",
+      },
+    ],
   },
   fr: {
     aboutTitle: "À propos de EURL GSI Ascenseurs",
@@ -54,11 +83,6 @@ export const translations = {
       "Que ce soit pour des installations résidentielles, commerciales ou industrielles, GSI est dédié à fournir des solutions personnalisées qui prennent en compte les exigences uniques de chaque projet. Des immeubles de grande hauteur aux monte-charges en passant par les ascenseurs conçus pour les personnes à mobilité réduite, GSI offre des solutions efficaces et durables pour tous types de besoins.",
     whyChooseUs: "Pourquoi Choisir GSI Ascenseurs ?",
     chooseUsText: "Expertise. Rigueur. Approche Centrée sur le Client.",
-    usefulLinks: "Liens Utiles",
-    products: "Produits",
-    services: "Services",
-    allRightsReserved: "Tous droits réservés.",
-
     contactUs: "Contactez-nous",
     sendMessage: "Envoyez-nous un message",
     name: "Nom",
@@ -71,6 +95,39 @@ export const translations = {
     phone: "(213) 540 088 854",
     companyDescription:
       "Notre société d'importation et d'installation d'ascenseurs met à votre disposition des ascenseurs de fabrication Turque: THISA ELEVATOR, contrôlés au stade de la fabrication par l'ENACT à des prix très étudiés, et le SAV assuré.",
+    usefulLinks: "Liens Utiles",
+    home: "Accueil",
+    aboutUs: "À propos de nous",
+    products: "Produits",
+    services: "catalogue",
+    allRightsReserved: "Tous droits réservés.",
+    homeTitle:
+      "Spécialistes de la conception, installation et maintenance d'ascenseurs",
+    homeDiscreption:
+      "G.S.I Ascenseurs s'engage à fournir des solutions de levage innovantes, fiables et sûres. Nous offrons des services complets, y compris consultation, conception, installation et maintenance, pour répondre efficacement et économiquement à vos besoins en transport vertical.",
+    passengerElevator: "Ascenseur pour passagers",
+    cargoElevator: "Ascenseur de charge",
+    panoramicElevator: "Ascenseur panoramique",
+    hospitalElevator: "Ascenseur d'hôpital",
+    maintenance: "Maintenance",
+    download: "Télécharger",
+    downloadfile: "Télécharger le fichier",
+    completSheet:
+      "Veuillez remplir la fiche technique et nous l'envoyer par email.",
+    sliderTexts: [
+      {
+        title: "Élever l'innovation",
+        description: "Là où la précision rencontre la perfection",
+      },
+      {
+        title: "S'élever au-dessus de l'ordinaire",
+        description: "Élever les espaces avec style et innovation",
+      },
+      {
+        title: "Précision en mouvement",
+        description: "Ascenseurs conçus pour la plus fine expérience",
+      },
+    ],
   },
   ar: {
     aboutTitle: "عن EURL GSI Ascenseurs",
@@ -90,7 +147,6 @@ export const translations = {
       "سواء كان للتركيبات السكنية أو التجارية أو الصناعية، تلتزم GSI بتقديم حلول مخصصة تأخذ في الاعتبار المتطلبات الفريدة لكل مشروع. من المباني الشاهقة ومصاعد البضائع إلى المصاعد المصممة للأشخاص ذوي الحركة المحدودة، تقدم GSI حلولًا فعالة ودائمة لجميع أنواع الاحتياجات.",
     whyChooseUs: "لماذا تختار GSI Ascenseurs؟",
     chooseUsText: "الخبرة. الدقة. نهج يركز على العملاء.",
-
     contactUs: "اتصل بنا",
     sendMessage: "أرسل لنا رسالة",
     name: "الاسم",
@@ -104,8 +160,36 @@ export const translations = {
     companyDescription:
       "شركتنا لاستيراد وتركيب المصاعد توفر لكم مصاعد تركية الصنع: THISA ELEVATOR، يتم التحكم فيها أثناء التصنيع من قبل ENACT بأسعار تنافسية للغاية، مع ضمان خدمة ما بعد البيع.",
     usefulLinks: "روابط مفيدة",
+    home: "الرئيسية",
+    aboutUs: " معلومات عنا",
     products: "المنتجات",
-    services: "الخدمات",
+    services: "فهرس",
     allRightsReserved: "جميع الحقوق محفوظة.",
+    homeTitle: "متخصصون في تصميم وتركيب وصيانة المصاعد",
+    homeDiscreption:
+      "تلتزم G.S.I Ascenseurs بتقديم حلول مصاعد مبتكرة وموثوقة وآمنة. نحن نقدم خدمات شاملة تشمل الاستشارة والتصميم والتركيب والصيانة لضمان تلبية احتياجات النقل العمودي بكفاءة وفعالية من حيث التكلفة.",
+    passengerElevator: "مصعد الركاب",
+    cargoElevator: "مصعد البضائع",
+    panoramicElevator: "مصعد بانورامي",
+    hospitalElevator: "مصعد المستشفى",
+    maintenance: "الصيانة",
+    download: "تحميل",
+    downloadfile: "تنزيل الملف",
+    completSheet:
+      "يرجى ملء الورقة الفنية وإرسالها إلينا عبر البريد الإلكتروني.",
+    sliderTexts: [
+      {
+        title: "ارتقاء الابتكار",
+        description: "حيث تلتقي الدقة بالكمال",
+      },
+      {
+        title: "الارتقاء فوق العادي",
+        description: "رفع المساحات بالأناقة والابتكار",
+      },
+      {
+        title: "الدقة في الحركة",
+        description: "مصاعد مصممة لأفضل تجربة",
+      },
+    ],
   },
 };

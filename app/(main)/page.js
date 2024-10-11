@@ -16,6 +16,7 @@ const MainPage = () => {
       <div className="pt-2">
         <Slider />
       </div>
+
       <Products />
     </div>
   );

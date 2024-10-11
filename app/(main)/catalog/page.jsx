@@ -3,6 +3,8 @@ import Image from "next/image";
 import React, { useState } from "react";
 import image1 from "./../../../assets/fich.jpg";
 import image2 from "./../../../assets/katalog.png";
+import { translations } from "@/app/context/translations";
+import { useLanguage } from "@/app/context/LanguageContext";
 
 export default function Page() {
   const [pdfUrl, setPdfUrl] = useState(
@@ -20,17 +22,18 @@ export default function Page() {
     link.click();
     document.body.removeChild(link);
   };
-
+  const { language } = useLanguage();
+  const t = translations[language];
   return (
     <div className="flex flex-col justify-center items-center w-full p-4">
       <div className="flex flex-col md:flex-row justify-center items-center w-full py-10 gap-8 md:gap-16">
         <div className="flex flex-col items-center justify-center">
-          <h1 className="text-2xl font-bold mb-4 text-center">Catalogue</h1>
+          <h1 className="text-2xl font-bold mb-4 text-center">{t.services}</h1>
           <button
             onClick={() => handleDownload(pdfUrl)}
             className="mt-5 px-6 py-3 bg-[#10183C] text-white rounded-lg hover:bg-[#282B58] focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-75 transition-all duration-300"
           >
-            Download PDF
+            <span>{t.download}</span> PDF
           </button>
         </div>
         <div className="flex justify-center items-center">
@@ -47,14 +50,13 @@ export default function Page() {
       <div className="flex flex-col md:flex-row justify-between items-center w-full py-10 gap-8 md:gap-16">
         <div className="flex flex-col items-center justify-center">
           <h1 className="text-2xl font-bold mb-4 text-center px-4">
-            Veuillez remplir la fiche technique et nous l&apos;envoyer par
-            email.
+            {t.completSheet}
           </h1>
           <button
             onClick={() => handleDownload(pdfUrl2)}
             className="mt-5 px-6 py-3 bg-[#10183C] text-white rounded-lg hover:bg-[#282B58] focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-75 transition-all duration-300"
           >
-            Download PDF
+            <span>{t.downloadfile}</span>
           </button>
         </div>
         <div className="flex justify-center items-center">

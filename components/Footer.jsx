@@ -3,14 +3,21 @@
 import React from "react";
 import { useLanguage } from "@/app/context/LanguageContext";
 import { translations } from "@/app/context/translations";
+import Link from "next/link";
 
 function Footer() {
   const { language } = useLanguage();
   const t = translations[language];
 
   return (
-    <footer className="bg-[#282C58] text-white py-8">
-      <div className="container mx-auto px-4">
+    <footer
+      className={`bg-[#282C58] text-white py-8 ${
+        language === "ar" ? "rtl" : ""
+      }`}
+    >
+      <div
+        className={`container mx-auto px-4 ${language === "ar" ? "rtl" : ""}`}
+      >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">
@@ -18,29 +25,16 @@ function Footer() {
             </h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="hover:text-gray-300">
-                  {t.home || "Home"}
-                </a>
+                <Link href="/">{t.home || "Home"}</Link>
               </li>
               <li>
-                <a href="#" className="hover:text-gray-300">
-                  {t.aboutUs || "About Us"}
-                </a>
+                <Link href="/aboutus">{t.aboutUs || "About Us"}</Link>
               </li>
               <li>
-                <a href="#" className="hover:text-gray-300">
-                  {t.products || "Products"}
-                </a>
+                <Link href="/catalog">{t.services || "Catalogue"}</Link>
               </li>
               <li>
-                <a href="#" className="hover:text-gray-300">
-                  {t.services || "Services"}
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-gray-300">
-                  {t.contactUs || "Contact"}
-                </a>
+                <Link href="/contact">{t.contactUs || "Contact"}</Link>
               </li>
             </ul>
           </div>
