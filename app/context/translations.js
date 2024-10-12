@@ -106,9 +106,9 @@ export const translations = {
     homeDiscreption:
       "G.S.I Ascenseurs s'engage à fournir des solutions de levage innovantes, fiables et sûres. Nous offrons des services complets, y compris consultation, conception, installation et maintenance, pour répondre efficacement et économiquement à vos besoins en transport vertical.",
     passengerElevator: "Ascenseur pour passagers",
-    cargoElevator: "Ascenseur de charge",
+    cargoElevator: "monte-charge",
     panoramicElevator: "Ascenseur panoramique",
-    hospitalElevator: "Ascenseur d'hôpital",
+    hospitalElevator: "monte-malade",
     maintenance: "Maintenance",
     download: "Télécharger",
     downloadfile: "Télécharger le fichier",
