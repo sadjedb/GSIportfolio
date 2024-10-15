@@ -1,69 +1,6 @@
 import { Download } from "lucide-react";
 
 export const translations = {
-  en: {
-    aboutTitle: "About EURL GSI Ascenseurs",
-    aboutSubtitle: "Elevating standards with premium lift installations",
-    ourMission: "Our Mission",
-    missionText1:
-      "At EURL GSI Ascenseurs, we specialize in the importation and installation of high-quality elevators, tailored to meet the most demanding needs of our clients. Partnering with the renowned Turkish brand THISA, we provide top-quality equipment at competitive prices suited for the local market.",
-    missionText2:
-      "Our elevators are equipped with modern technologies and reliable machinery sourced from leading manufacturers such as Akis and Eker from Turkey, and Alberto Sassi and Montanari from Italy.",
-    qualityCommitment: "Our Commitment to Quality",
-    qualityText1:
-      "At GSI, we prioritize customer satisfaction by offering products that meet international safety and quality standards. Our solutions are carefully selected to meet the most stringent requirements and can be validated by the National Company for Approval and Technical Control (ENACT), ensuring the safety and performance of our installations.",
-    qualityText2:
-      "We also provide a two-year supplier warranty on all installed equipment, giving our clients peace of mind. In addition, our competent after-sales service offers unlimited support, ensuring long-term durability and flawless operation of all our elevators.",
-    tailoredSolutions: "Tailored Solutions for Every Need",
-    tailoredText:
-      "Whether for residential, commercial, or industrial installations, GSI is dedicated to providing custom solutions that consider the unique requirements of each project. From high-rise buildings and freight elevators to elevators designed for people with reduced mobility, GSI offers efficient, durable solutions for all types of needs.",
-    whyChooseUs: "Why Choose GSI Ascenseurs?",
-    chooseUsText: "Expertise. Rigor. Customer-Centric Approach.",
-    contactUs: "Contact Us",
-    sendMessage: "Send us a message",
-    name: "Name",
-    email: "Email",
-    number: "Phone number",
-    subject: "Subject",
-    message: "Message",
-    send: "Send",
-    address: "29 Coopérative Zaghloul, Point Du jour, Oran",
-    phone: "(213) 540 088 854",
-    companyDescription:
-      "Our elevator import and installation company offers Turkish-made elevators: THISA ELEVATOR, controlled during manufacturing by ENACT at very competitive prices, with assured after-sales service.",
-    usefulLinks: "Useful Links",
-    home: "Home",
-    aboutUs: "About Us",
-    products: "Products",
-    services: "Catalog",
-    allRightsReserved: "All rights reserved.",
-    homeTitle: "Elevator Design, Installation, and Maintenance Specialists",
-    homeDiscreption:
-      "G.S.I Ascenseurs is dedicated to providing innovative, reliable, and safe elevator solutions. We offer comprehensive services, including consultation, design, installation, and maintenance, to ensure your vertical transportation needs are met efficiently and cost-effectively.",
-    passengerElevator: "Passenger Elevator",
-    cargoElevator: "Cargo Elevator",
-    panoramicElevator: "Panoramic Elevator",
-    hospitalElevator: "Hospital Elevator",
-    maintenance: "Maintenance",
-    download: "Download",
-    downloadfile: "Download file",
-    completSheet:
-      "Please complete the technical sheet and send it to us by email.",
-    sliderTexts: [
-      {
-        title: "Elevating Innovation",
-        description: "Where Precision Meets Perfection",
-      },
-      {
-        title: "Rising Above the Ordinary",
-        description: "Elevating Spaces with Style and Innovation",
-      },
-      {
-        title: "Precision in Motion",
-        description: "Elevators Designed for the Finest Experience",
-      },
-    ],
-  },
   fr: {
     aboutTitle: "À propos de EURL GSI Ascenseurs",
     aboutSubtitle:
@@ -126,6 +63,69 @@ export const translations = {
       {
         title: "Précision en mouvement",
         description: "Ascenseurs conçus pour la plus fine expérience",
+      },
+    ],
+  },
+  en: {
+    aboutTitle: "About EURL GSI Ascenseurs",
+    aboutSubtitle: "Elevating standards with premium lift installations",
+    ourMission: "Our Mission",
+    missionText1:
+      "At EURL GSI Ascenseurs, we specialize in the importation and installation of high-quality elevators, tailored to meet the most demanding needs of our clients. Partnering with the renowned Turkish brand THISA, we provide top-quality equipment at competitive prices suited for the local market.",
+    missionText2:
+      "Our elevators are equipped with modern technologies and reliable machinery sourced from leading manufacturers such as Akis and Eker from Turkey, and Alberto Sassi and Montanari from Italy.",
+    qualityCommitment: "Our Commitment to Quality",
+    qualityText1:
+      "At GSI, we prioritize customer satisfaction by offering products that meet international safety and quality standards. Our solutions are carefully selected to meet the most stringent requirements and can be validated by the National Company for Approval and Technical Control (ENACT), ensuring the safety and performance of our installations.",
+    qualityText2:
+      "We also provide a two-year supplier warranty on all installed equipment, giving our clients peace of mind. In addition, our competent after-sales service offers unlimited support, ensuring long-term durability and flawless operation of all our elevators.",
+    tailoredSolutions: "Tailored Solutions for Every Need",
+    tailoredText:
+      "Whether for residential, commercial, or industrial installations, GSI is dedicated to providing custom solutions that consider the unique requirements of each project. From high-rise buildings and freight elevators to elevators designed for people with reduced mobility, GSI offers efficient, durable solutions for all types of needs.",
+    whyChooseUs: "Why Choose GSI Ascenseurs?",
+    chooseUsText: "Expertise. Rigor. Customer-Centric Approach.",
+    contactUs: "Contact Us",
+    sendMessage: "Send us a message",
+    name: "Name",
+    email: "Email",
+    number: "Phone number",
+    subject: "Subject",
+    message: "Message",
+    send: "Send",
+    address: "29 Coopérative Zaghloul, Point Du jour, Oran",
+    phone: "(213) 540 088 854",
+    companyDescription:
+      "Our elevator import and installation company offers Turkish-made elevators: THISA ELEVATOR, controlled during manufacturing by ENACT at very competitive prices, with assured after-sales service.",
+    usefulLinks: "Useful Links",
+    home: "Home",
+    aboutUs: "About Us",
+    products: "Products",
+    services: "Catalog",
+    allRightsReserved: "All rights reserved.",
+    homeTitle: "Elevator Design, Installation, and Maintenance Specialists",
+    homeDiscreption:
+      "G.S.I Ascenseurs is dedicated to providing innovative, reliable, and safe elevator solutions. We offer comprehensive services, including consultation, design, installation, and maintenance, to ensure your vertical transportation needs are met efficiently and cost-effectively.",
+    passengerElevator: "Passenger Elevator",
+    cargoElevator: "Cargo Elevator",
+    panoramicElevator: "Panoramic Elevator",
+    hospitalElevator: "Hospital Elevator",
+    maintenance: "Maintenance",
+    download: "Download",
+    downloadfile: "Download file",
+    completSheet:
+      "Please complete the technical sheet and send it to us by email.",
+    sliderTexts: [
+      {
+        title: "Elevating Innovation",
+        description: "Where Precision Meets Perfection",
+      },
+      {
+        title: "Rising Above the Ordinary",
+        description: "Elevating Spaces with Style and Innovation",
+      },
+      {
+        title: "Precision in Motion",
+        description: "Elevators Designed for the Finest Experience",
       },
     ],
   },

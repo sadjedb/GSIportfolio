@@ -4,9 +4,9 @@ import { ChevronDown } from "lucide-react";
 import { useLanguage } from "../app/context/LanguageContext";
 
 const languages = [
+  { code: "fr", name: "Français", flag: "🇫🇷" },
   { code: "en", name: "English", flag: "🇬🇧" },
   { code: "ar", name: "العربية", flag: "🇸🇦" },
-  { code: "fr", name: "Français", flag: "🇫🇷" },
 ];
 
 const LanguageSelector = () => {
